@@ -47,7 +47,7 @@ h1 {
 h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  text-align: left;
+  text-align: center;
 }
 
 h3 {
@@ -212,7 +212,7 @@ nav {
 
 .btn-primary {
   background-color: var(--primary-color);
-  color: var(--accent-color);
+  color: #ffffff;
 }
 
 .btn-primary:hover {
