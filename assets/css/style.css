@@ -818,6 +818,57 @@ footer {
   font-size: 0.85rem;
 }
 
+/* ===== Lightbox ===== */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.lightbox p {
+  color: #ffffff;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.lightbox-close:hover {
+  opacity: 1;
+}
+
 /* ===== WhatsApp Button ===== */
 .whatsapp-btn {
   position: fixed;

@@ -93,6 +93,38 @@ document.querySelectorAll('.social-link').forEach(link => {
   });
 });
 
+// ===== Lightbox =====
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxCaption = document.getElementById('lightbox-caption');
+const lightboxClose = document.getElementById('lightbox-close');
+
+document.querySelectorAll('.gallery-item[data-img]').forEach(item => {
+  item.addEventListener('click', () => {
+    const src = item.getAttribute('data-img');
+    const caption = item.getAttribute('data-caption') || '';
+    lightboxImg.src = src;
+    lightboxImg.alt = caption;
+    lightboxCaption.textContent = caption;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove('active');
+  lightboxImg.src = '';
+  document.body.style.overflow = '';
+}
+
+if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+if (lightbox) lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+});
+
 // Log de carregamento da página
 console.log('Judô Kaminari - Site carregado com sucesso');
 console.log('Versão: 1.0');

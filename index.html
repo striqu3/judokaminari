@@ -354,7 +354,7 @@
       <h2 class="fade-in">Galeria</h2>
 
       <div class="gallery-grid">
-        <div class="gallery-item fade-in">
+        <div class="gallery-item fade-in" data-img="assets/images/judo-dojo.jpg" data-caption="Nosso Dojo">
           <img src="assets/images/judo-dojo.jpg" alt="Interior do dojo da Academia Kaminari com tatami e equipamentos de treinamento" loading="lazy">
           <div class="gallery-overlay">
             <div class="gallery-overlay-icon">Ver foto</div>
@@ -365,7 +365,7 @@
           </div>
         </div>
 
-        <div class="gallery-item fade-in">
+        <div class="gallery-item fade-in" data-img="assets/images/judo-hero.jpg" data-caption="Nossos Senseis">
           <img src="assets/images/judo-hero.jpg" alt="Senseis e mestres de judô da Academia Kaminari" loading="lazy">
           <div class="gallery-overlay">
             <div class="gallery-overlay-icon">Ver foto</div>
@@ -376,7 +376,7 @@
           </div>
         </div>
 
-        <div class="gallery-item fade-in">
+        <div class="gallery-item fade-in" data-img="assets/images/judo-kids.jpg" data-caption="Alunos em Ação">
           <img src="assets/images/judo-kids.jpg" alt="Alunos praticando técnicas de judô no tatami" loading="lazy">
           <div class="gallery-overlay">
             <div class="gallery-overlay-icon">Ver foto</div>
@@ -387,7 +387,7 @@
           </div>
         </div>
 
-        <div class="gallery-item fade-in">
+        <div class="gallery-item fade-in" data-img="assets/images/judo-competition.jpg" data-caption="Competições">
           <img src="assets/images/judo-competition.jpg" alt="Competição de judô com atletas em match" loading="lazy">
           <div class="gallery-overlay">
             <div class="gallery-overlay-icon">Ver foto</div>
@@ -539,6 +539,13 @@
       </div>
     </div>
   </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visualizar foto">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Fechar">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
 
   <!-- WhatsApp Button -->
   <a href="https://wa.me/5541999876799?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20de%20jud%C3%B4" target="_blank" class="whatsapp-btn" title="Enviar mensagem no WhatsApp" aria-label="Contato via WhatsApp">
