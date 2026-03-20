@@ -233,14 +233,17 @@ nav {
 }
 
 .hero-image {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-image img {
   width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  height: 520px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.18);
 }
 
 /* ===== Sobre Section ===== */
